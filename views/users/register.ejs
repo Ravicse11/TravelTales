@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate')%>
+<section class="vh-100">
+    <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="card shadow">
+        <div class="row">
+            <div class="col-md-6" style="height: 46vh;">
+            <!-- <div class="col-md-6 offset-md-3 "> -->
+                <!-- <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4"> -->
+               
+                    <img src="https://c8.alamy.com/comp/2CAG658/the-word-register-written-on-wooden-cubes-with-a-push-button-on-yellow-background-online-registration-concept-2CAG658.jpg"
+                        alt="" class="card-img-top" /> 
+                    </div>
+                    <div class="col-md-6 justify-content-center " style="height: 62vh;">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-center"><b>Register</b></h5>
+                        <form action="/register" method="POST" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="username">Name</label>
+                                <input class="form-control" placeholder="Enter your name" id="username" name="username" required
+                                    autofocus>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Username</label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Enter your username" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" type="password" id="password" name="password" placeholder="Enter password" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-block">Register</button>
+                        </form>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

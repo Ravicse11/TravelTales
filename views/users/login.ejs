@@ -1,0 +1,44 @@
+<% layout('layouts/boilerplate')%>
+<section class="vh-100">
+    <div class="container d-flex justify-content-center align-items-center h-100">
+       <div class="card shadow">
+        <div class="row">
+            <!-- <div class="col offset-md-3"> -->
+                <!-- <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4"> -->
+             
+                
+                    <div class="col-md-6" style="height: 50vh;">
+                    <img src="https://cdn.pixabay.com/photo/2022/11/30/13/25/login-7626822__340.jpg" alt="" 
+                    
+                        class="card-img-top" style="height: 50vh;" />
+                    </div>
+                        <div class="col-md-6">
+                      
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Login</h3>
+                        <form action="/login" method="POST" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="username">Username</label>
+                                <input class="form-control" type="text" id="username" name="username" placeholder="Enter your username" autofocus
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-block">Login</button>
+                        </form>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+</section>
